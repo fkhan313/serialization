@@ -1,1 +1,6 @@
-{"make":"Honda","model":"Civic","color":"Black","year":2022}
+{
+  "make" : "Honda",
+  "model" : "Civic",
+  "color" : "Black",
+  "year" : 2022
+}

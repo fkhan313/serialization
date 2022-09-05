@@ -1,5 +1,6 @@
 package org.serialization;
 
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
@@ -14,11 +15,16 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
-        //write Car class properties into a json file
+        //write Car class properties into a JSON file
         //mapper.writeValue(new File("C:\\Users\\fkhan\\OneDrive\\Java Projects\\serialization\\test.json"),c1);
+
         //Write properties as String
-        String data= mapper.writeValueAsString(c1);
-        System.out.println(data);
+        /*String data= mapper.writeValueAsString(c1);
+        System.out.println(data);*/
+
+        //read data from a JSON file
+        Car c2= mapper.readValue(new File("C:\\Users\\fkhan\\OneDrive\\Java Projects\\serialization\\readJsonTest.json"), Car.class);
+        System.out.println(c2);
 
 
 

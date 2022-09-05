@@ -13,6 +13,9 @@ public class Car {
         this.color = color;
         this.year = year;
     }
+    public Car() {
+
+    }
 
     public String getMake() {
         return make;
