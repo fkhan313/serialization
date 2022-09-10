@@ -1,12 +1,10 @@
-package org.serialization;
+package serialization;
 
-import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
 
 public class Main {
     public static void main(String[] args) throws IOException {

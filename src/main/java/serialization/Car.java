@@ -1,4 +1,4 @@
-package org.serialization;
+package serialization;
 
 public class Car {
     private String make;
